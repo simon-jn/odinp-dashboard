@@ -1,3 +1,18 @@
+:root {
+  --color-sidebar: #1B3C53;
+  --color-topbar: #234C6A;
+  --color-rightbar: #e8edf3;
+
+  --color-bg: #e8edf3;
+  --color-card-bg: #ffffff;
+
+  --color-accent: #456882;
+  --color-card-accent: #456882;
+
+  --color-text-dark: #1A1A1A;
+  --color-text-light: #F5F5F5;
+}
+
 body,
 html {
   height: 100%;
@@ -8,11 +23,11 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 0.7fr 4fr 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
   font-size: 1.8rem;
-  color: white;
+  color: var(--color-bg);
 }
 
 /* .container div {
@@ -22,7 +37,7 @@ html {
 
 .sidebar {
   display: grid;
-  background-color: #005B94;
+  background-color: var(--color-sidebar);
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   grid-template-rows: 1fr 5fr 4fr;
@@ -42,10 +57,14 @@ html {
 }
 
 .topbar {
-  background-color: darkgray;
+  background-color: var(--color-topbar);
+  height: 150px;
   display: grid;
   grid-column: 2 / -1;
   grid-template-columns: 2fr 1fr;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.30);
+  /* position: absolute; */
+  z-index: 1;
 }
 
 /* .topbar {
@@ -60,13 +79,14 @@ html {
 .content {
   color: black;
   /* background-color: darkolivegreen; */
-  background: #e8edf3;
+  background: var(--color-bg);
   display: grid;
   /* grid-column: 2 / -2; */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
   padding: 15px;
   grid-auto-rows: max-content;
+  /* z-index: -1; */
 }
 
 .content .projects {
@@ -78,7 +98,7 @@ html {
 }
 
 .content .card {
-  background-color: white;
+  background-color: var(--color-card-bg);
   height: 200px;
   text-align: center;
   border-radius: 12px;
@@ -106,7 +126,7 @@ html {
   top: 0;
   width: 11px;
   height: 100%;
-  background: #f1b400;   /* golden yellow */
+  background: var(--color-card-accent);   /* golden yellow */
   border-radius: 12px 0 0 12px;
 }
 
@@ -118,6 +138,7 @@ html {
 }
 
 .rightbar {
-  background-color: rgb(233, 142, 119);
+  background-color: var(--color-rightbar);
   grid-column: 3 / -1;
+  color: black;
 }
