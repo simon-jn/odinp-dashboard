@@ -1,13 +1,13 @@
 :root {
-  --color-sidebar: #1B3C53;
-  --color-topbar: #234C6A;
+  --color-sidebar: #234C6A;
+  --color-topbar: #ffffff;
   --color-rightbar: #e8edf3;
 
   --color-bg: #e8edf3;
   --color-card-bg: #ffffff;
 
-  --color-accent: #456882;
-  --color-card-accent: #456882;
+  --color-accent: #FDEB9E;
+  --color-card-accent: #FDEB9E;
 
   --color-text-dark: #1A1A1A;
   --color-text-light: #F5F5F5;
@@ -58,13 +58,37 @@ html {
 
 .topbar {
   background-color: var(--color-topbar);
-  height: 150px;
+  height: 200px;
   display: grid;
   grid-column: 2 / -1;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
   box-shadow: 0 8px 20px rgba(0,0,0,0.30);
   /* position: absolute; */
   z-index: 1;
+  justify-items: center;
+}
+
+.search {
+  /* background-color: var(--color-bg) */
+  /* justify-content: center; */
+   /* display: grid; */
+   padding: 20px;
+  justify-items: center; */
+}
+
+.search-bar {
+  /* justify-items: center; */
+  padding: 10px 14px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  width: 450px;
+  /* height: 6px; */
+  /* margin-top: 20px; */
+  /* margin-left: 50px; */
+  /* margin-bottom: 20px; */
+  /* margin-top: 30px; */
+  background-color: var(--color-bg);
 }
 
 /* .topbar {
@@ -132,7 +156,7 @@ html {
 
 
 /* Hover effect */
-.card:hover {
+.content .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
