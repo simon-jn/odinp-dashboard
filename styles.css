@@ -21,13 +21,30 @@ html {
   font-family: Arial, sans-serif;
 }
 
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+
+
 .container {
   display: grid;
   grid-template-columns: 0.7fr 4fr 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
-  font-size: 1.8rem;
   color: var(--color-bg);
+}
+
+.container h2 {
+  font-size: 1.5rem;
 }
 
 /* .container div {
@@ -58,47 +75,37 @@ html {
 
 .topbar {
   background-color: var(--color-topbar);
+  color: black;
   height: 200px;
   display: grid;
   grid-column: 2 / -1;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1.5fr;
   box-shadow: 0 8px 20px rgba(0,0,0,0.30);
-  /* position: absolute; */
   z-index: 1;
-  justify-items: center;
+  padding-left: 30px;
 }
 
 .search {
-  /* background-color: var(--color-bg) */
-  /* justify-content: center; */
-   /* display: grid; */
-   padding: 20px;
+  padding: 20px;
   justify-items: center; */
 }
 
 .search-bar {
-  /* justify-items: center; */
   padding: 10px 14px;
   border-radius: 15px;
   border: 1px solid #ccc;
   width: 450px;
-  /* height: 6px; */
-  /* margin-top: 20px; */
-  /* margin-left: 50px; */
-  /* margin-bottom: 20px; */
-  /* margin-top: 30px; */
   background-color: var(--color-bg);
 }
 
-/* .topbar {
-  display: grid;
-  grid-column: 2 / -1;
-  grid-template-columns: 2fr 1fr 2fr 1fr;
-  align-items: center;
-  background-color: darkgray;
-  padding: 10px 20px;
-} */
+.greeting {
+
+}
+
+.topbar .h2 {
+  font-size: 0.8rem;
+}
 
 .content {
   color: black;
