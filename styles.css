@@ -100,7 +100,8 @@ a:hover {
 }
 
 .greeting {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .topbar .h2 {
@@ -131,7 +132,7 @@ a:hover {
 .content .card {
   background-color: var(--color-card-bg);
   height: 200px;
-  text-align: center;
+  text-align: left;
   border-radius: 12px;
   padding: 1.5rem;
   position: relative;
