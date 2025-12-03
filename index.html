@@ -1,82 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Gaming Backlog</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Gaming Backlog</title>
 </head>
+
 <body>
-    <div class="container">
-       <div class="sidebar">
-        <div class="home">
-         Dashboard
-        </div>
-        <div class="menu">
-         <p>Home</p>
-         <p><a href="./started">Started</a></p>
-         <p><a href="./not-started">Not started</a></p>
-         <p>Progress</p>
-         <p>Owned</p>
-         <p>Wishlist</p>
-        </div>
-        <div class="settings">
-         <p>Settings</p>
-         <p>Support</p>
-         <p>Privacy</p>
-        </div>
+   <div class="container">
+      <div class="sidebar">
+         <ul>
+            <li>
+               <img src="./assets/icons/home.svg" class="icon">
+               Home
+            </li>
+            <hr>
+            <li>
+               <img src="" class="icon">
+               Started
+            </li>
+            <li>
+               <img src="" class="icon">
+               Not Started
+            </li>
+            <li>
+               <img src="" class="icon">
+               Progress
+            </li>
+            <li>
+               <img src="" class="icon">
+               Owned
+            </li>
+            <li>
+               <img src="" class="icon">
+               Wishlist
+            </li>
+            <hr>
+            <li>
+               <img src="assets/icons/cog.svg" class="icon">
+               Settings
+            </li>
+         </ul>
       </div>
 
 
-       <div class="topbar">
-        <div class="search">
-         <input type="text" placeholder="Search..." class="search-bar">
-        </div>
-        
+      <div class="topbar">
+         <div class="search">
+            <input type="text" placeholder="Search..." class="search-bar">
+         </div>
 
-        <div class="user">
-         User
-        </div>
-        <div class="greeting">
-         <img src="./images/odin-310x310.png" alt="The Odin Project Logo" height="40" width="40">
-         <p>Hi there,</p>
-         <p><h2>Dark Overloard (@D4rk0ver1o4rd)</h2></p>
-        </div>
-        <div class="upload">
-         Add Game
-        </div>
-       </div>
-     <div class="content">
+
+         <div class="user">
+            User
+         </div>
+         <div class="greeting">
+            <img src="./images/odin-310x310.png" alt="The Odin Project Logo" height="40" width="40">
+            <div class="greeting-text">
+               <span class="hello">Hi, there</span>
+               <span class="username">Dark Overloard (@D4rk0ver1o4rd)</span> 
+            </div>
+         </div>
+         <div class="upload">
+            Add Game
+         </div>
+      </div>
+
+
+      <div class="content">
          <div class="projects">Your Games</div>
          <div class="card">
             <div class="accent"></div>
             <h3>The Last of Us Part II</h3>
-            <p>Five years after the events of The Last of Us, Ellie embarks on another journey through a post-apocalyptic America on a mission of vengeance against a mysterious militia.</p>
+            <p>Five years after the events of The Last of Us, Ellie embarks on another journey through a
+               post-apocalyptic America on a mission of vengeance against a mysterious militia.</p>
             <p><a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">Steam page</a></p>
          </div>
          <div class="card">
             <div class="accent"></div>
             <h3>Cyberpunk 2077</h3>
-            <p>In Night City, a mercenary known as V navigates a dystopian society in which the line between humanity and technology becomes blurred.</p>
+            <p>In Night City, a mercenary known as V navigates a dystopian society in which the line between humanity
+               and technology becomes blurred.</p>
             <p><a href="">Steam page</a></p>
          </div>
          <div class="card">
             <div class="accent"></div>
             <h3>Outer Wilds</h3>
-            <p>Outer Wilds is an exploration game about curiosity, roasting marshmallows, and unraveling the mysteries of the cosmos.</p>
+            <p>Outer Wilds is an exploration game about curiosity, roasting marshmallows, and unraveling the mysteries
+               of the cosmos.</p>
             <p><a href="">Steam page</a></p>
          </div>
          <div class="card">
             <div class="accent"></div>
             <h3>Uncharted 4: A thief's End</h3>
-            <p>Thrown back into the dangerous underworld he'd tried to leave behind, Nathan Drake must decide what he's willing to sacrifice to save the ones he loves.</p>
-            <p><a href="">Steam page</a></p>            
+            <p>Thrown back into the dangerous underworld he'd tried to leave behind, Nathan Drake must decide what he's
+               willing to sacrifice to save the ones he loves.</p>
+            <p><a href="">Steam page</a></p>
          </div>
          <div class="card">
             <div class="accent"></div>
             <h3>Elden Ring</h3>
-            <p>In a dark fantasy world created by Hidetaka Miyazaki (Dark Souls) and George R. R. Martin (A Song of Ice and Fire), the player is a Tarnished who is called back to the Lands Between to restore the Elden Ring and become the Elden Lord.</p>
-            <p><a href="">Steam page</a></p>            
+            <p>In a dark fantasy world created by Hidetaka Miyazaki (Dark Souls) and George R. R. Martin (A Song of Ice
+               and Fire), the player is a Tarnished who is called back to the Lands Between to restore the Elden Ring
+               and become the Elden Lord.</p>
+            <p><a href="">Steam page</a></p>
          </div>
          <div class="card">
             <div class="accent"></div>
@@ -84,38 +112,39 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p><a href="">Steam page</a></p>
          </div>
-     </div>
+      </div>
 
 
-     <div class="rightbar">
-        <div class="announcements" >
-         <h3>Announcements</h3>
-           <div class="card">
-            <h4>Announcement 1</h4>
-            <p>This is an important announcement!</p>
-            <h4>Announcement 2</h4>
-            <p>This is an important announcement!</p>
-            <h4>Announcement 2</h4>
-            <p>This is an important announcement!</p>
-           </div>
+      <div class="rightbar">
+         <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="card">
+               <h4>Announcement 1</h4>
+               <p>This is an important announcement!</p>
+               <h4>Announcement 2</h4>
+               <p>This is an important announcement!</p>
+               <h4>Announcement 2</h4>
+               <p>This is an important announcement!</p>
+            </div>
          </div>
-         
-        <div class="trending">
-         <h3>Trending</h3>
-         <div class="card">
-            <div class="trendpost">
-               <p>Some trendy post</p>
-            </div>
-            <div class="trendpost">
-               <p>Some trendy post</p>
-            </div>
-            <div class="trendpost">
-               <p>Some trendy post</p>
-            </div>
 
+         <div class="trending">
+            <h3>Trending</h3>
+            <div class="card">
+               <div class="trendpost">
+                  <p>Some trendy post</p>
+               </div>
+               <div class="trendpost">
+                  <p>Some trendy post</p>
+               </div>
+               <div class="trendpost">
+                  <p>Some trendy post</p>
+               </div>
+
+            </div>
          </div>
-        </div>
-     </div>
-    </div>
+      </div>
+   </div>
 </body>
+
 </html>

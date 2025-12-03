@@ -37,7 +37,7 @@ a:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 0.7fr 4fr 1fr;
+  grid-template-columns: 0.8fr 4fr 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
   color: var(--color-bg);
@@ -53,25 +53,56 @@ a:hover {
 } */
 
 .sidebar {
-  display: grid;
   background-color: var(--color-sidebar);
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-  grid-template-rows: 1fr 5fr 4fr;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.sidebar .home {
-  padding-top: 30px;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
 }
 
-.sidebar .menu {
-  padding-top: ;
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 12px;    /* space between icon and text */
+  padding: 12px 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #dce7f5;
 }
-.sidebar p {
 
+
+.sidebar li:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  color: #fff;
 }
+
+.sidebar li .icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(85%); /* makes the icon white-ish */
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.sidebar li:hover .icon {
+  filter: invert(100%);
+  opacity: 1;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 15px 0;
+}
+
 
 .topbar {
   background-color: var(--color-topbar);
@@ -100,8 +131,28 @@ a:hover {
 }
 
 .greeting {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.hello {
+  font-size: 1rem;
+  color: #555;
+}
+
+.username {
+  font-size: 1.3rem;   /* Larger text */
+  font-weight: 700;    /* Bold */
+  color: #111;
 }
 
 .topbar .h2 {
